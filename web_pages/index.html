@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../js/MyJs.js"></script>
+    <link rel="stylesheet" href="../css/MyStyle.css" />
+    <title>Task Tracker</title>
+  </head>
+  <body>
+    <h1>Task Tracker</h1>
+
+    <!-- this is where we add new tasks from -->
+    <div id="NewTrackerFormDiv" class="NewTrackerFormDiv">
+      <input
+        type="text"
+        id="NewTaskName"
+        name="NewTaskName"
+        placeholder="Task name"
+      />
+      <input type="time" id="NewTaskTime" name="NewTaskTime" value="08:00" />
+
+      <button id="ClearListButton" onclick="ClearTaskList()">Clear</button
+      ><!-- Button to clear all the tasks-->
+
+      <button id="NewTrackerFormButton" onclick="AddNewTask()">Add</button
+      ><!-- button adds new task to list -->
+    </div>
+
+    <hr />
+    <!-- this is where we have the task list  -->
+    <div id="TaskListDiv" class="TaskListDiv"></div>
+  </body>
+</html>
